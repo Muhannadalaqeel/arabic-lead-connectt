@@ -1,6 +1,23 @@
-import { MessageCircle, Clock } from "lucide-react";
+import { useState, useEffect } from "react";
+import { Clock } from "lucide-react";
+
+const rotatingWords = [
+  "رحلة النجاح",
+  "التطور المهني",
+  "التميز التدريبي",
+  "مستقبلك الآن",
+];
 
 const HeroSection = () => {
+  const [currentWordIndex, setCurrentWordIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentWordIndex((prevIndex) => (prevIndex + 1) % rotatingWords.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="relative pt-24 md:pt-32 pb-8 md:pb-12 overflow-hidden">
       {/* Background Glow Effects */}
@@ -14,7 +31,12 @@ const HeroSection = () => {
           {/* Main Heading */}
           <h1 className="font-display text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-tight mb-6 opacity-0 animate-fade-in" style={{ animationDelay: '0.1s' }}>
             جاهز لتبدأ{' '}
-            <span className="text-gradient-primary">رحلة النجاح</span>
+            <span className="relative inline-block pb-3">
+              <span className="text-gradient-primary inline-block transition-all duration-500 opacity-100 transform translate-y-0">
+                {rotatingWords[currentWordIndex]}
+              </span>
+              <span className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary/50 via-accent/50 to-primary/50 rounded-full" />
+            </span>
             {' '}مع فريقك؟
           </h1>
 
