@@ -37,11 +37,16 @@ const interestOptions = [
 ];
 
 // Validation schema
+const phoneRegex = /^(\+966|05)[0-9]{8,9}$/;
+
 const leadSchema = z.object({
   firstName: z.string().trim().min(1, "الاسم الأول مطلوب").max(100),
   lastName: z.string().trim().min(1, "اسم العائلة مطلوب").max(100),
-  email: z.string().trim().email("البريد الإلكتروني غير صحيح").max(255),
-  phone: z.string().trim().min(1, "رقم الهاتف مطلوب").max(20),
+  email: z.string().trim().email("البريد الإلكتروني غير صحيح - مثال: name@company.com").max(255),
+  phone: z.string().trim()
+    .min(1, "رقم الهاتف مطلوب")
+    .regex(phoneRegex, "رقم الهاتف غير صحيح - يجب أن يبدأ بـ +966 أو 05")
+    .max(20),
   company: z.string().trim().min(1, "اسم الشركة مطلوب").max(200),
   jobTitle: z.string().trim().min(1, "المسمى الوظيفي مطلوب").max(100),
   teamSize: z.string().min(1, "حجم الفريق مطلوب"),
