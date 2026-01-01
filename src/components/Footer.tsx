@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="flex flex-col items-center md:items-start gap-4">
             <img 
               src={companyLogo} 
-              alt="شعار الشركة" 
+              alt="شعار التوثيق الوطني للتدريب" 
               className="h-12 md:h-16 w-auto object-contain"
             />
             <p className="text-muted-foreground text-sm text-center md:text-right max-w-xs">
@@ -40,7 +40,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-10 pt-6 border-t border-border/30 text-center">
           <p className="text-muted-foreground text-sm">
-            جميع الحقوق محفوظة © {new Date().getFullYear()} شركتنا
+            جميع الحقوق محفوظة © {new Date().getFullYear()} التوثيق الوطني للتدريب
           </p>
         </div>
       </div>
