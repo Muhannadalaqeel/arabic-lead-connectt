@@ -5,6 +5,7 @@ import ContactForm from "@/components/ContactForm";
 import AboutSection from "@/components/AboutSection";
 import PartnersMarquee from "@/components/PartnersMarquee";
 import Footer from "@/components/Footer";
+import WaveDivider from "@/components/WaveDivider";
 
 const Index = () => {
   return (
@@ -12,9 +13,13 @@ const Index = () => {
       <Header />
       <main>
         <HeroSection />
+        <WaveDivider variant="primary" />
         <StatsCounter />
+        <WaveDivider variant="accent" flip />
         <ContactForm />
+        <WaveDivider variant="subtle" />
         <AboutSection />
+        <WaveDivider variant="primary" flip />
         <PartnersMarquee />
       </main>
       <Footer />

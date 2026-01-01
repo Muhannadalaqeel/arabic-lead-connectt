@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="flex flex-col items-center md:items-start gap-4">
             <img 
               src={companyLogo} 
-              alt="شعار التوثيق الوطني للتدريب" 
+              alt="شعار الشركة" 
               className="h-12 md:h-16 w-auto object-contain"
             />
             <p className="text-muted-foreground text-sm text-center md:text-right max-w-xs">
@@ -21,17 +21,17 @@ const Footer = () => {
           {/* Contact Info */}
           <div className="flex flex-col items-center md:items-end gap-3">
             <a
-              href="mailto:info@altawthiq.com"
+              href="mailto:info@company.com"
               className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
             >
-              <span className="text-sm">info@altawthiq.com</span>
+              <span className="text-sm">info@company.com</span>
               <Mail className="w-4 h-4" />
             </a>
             <a
-              href="tel:+966553300598"
+              href="tel:+966500000000"
               className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
             >
-              <span className="text-sm" dir="ltr">+966 55 330 0598</span>
+              <span className="text-sm" dir="ltr">+966 50 000 0000</span>
               <Phone className="w-4 h-4" />
             </a>
           </div>
@@ -40,7 +40,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-10 pt-6 border-t border-border/30 text-center">
           <p className="text-muted-foreground text-sm">
-            جميع الحقوق محفوظة © {new Date().getFullYear()} التوثيق الوطني للتدريب
+            جميع الحقوق محفوظة © {new Date().getFullYear()} شركتنا
           </p>
         </div>
       </div>

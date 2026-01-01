@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Readex Pro', 'IBM Plex Sans Arabic', 'sans-serif'],
-        display: ['IBM Plex Sans Arabic', 'Readex Pro', 'sans-serif'],
+        sans: ['Cairo', 'Tajawal', 'sans-serif'],
+        display: ['Tajawal', 'Cairo', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -109,10 +109,6 @@ export default {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-50%)" },
         },
-        "marquee-rtl": {
-          "0%": { transform: "translateX(0)" },
-          "100%": { transform: "translateX(-50%)" },
-        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -125,7 +121,6 @@ export default {
         "ticker-rtl": "ticker-rtl 60s linear infinite",
         "ticker-ltr": "ticker-ltr 60s linear infinite",
         "marquee": "marquee 80s linear infinite",
-        "marquee-rtl": "marquee-rtl 40s linear infinite",
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

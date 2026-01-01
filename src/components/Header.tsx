@@ -19,9 +19,6 @@ const Header = () => {
           <Button
             variant="default" 
             className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-4 md:px-6 py-2 rounded-lg shadow-glow transition-all duration-300 hover:shadow-lg"
-            onClick={() => {
-              document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' });
-            }}
           >
             احجز عرضًا توضيحيًا
           </Button>

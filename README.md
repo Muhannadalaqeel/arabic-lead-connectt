@@ -1,98 +1,73 @@
-# التوثيق الوطني للتدريب - صفحة الهبوط
+# Welcome to your Lovable project
 
-صفحة هبوط احترافية لجمع بيانات العملاء المحتملين (Lead Generation)
+## Project info
 
-## الرابط المباشر
+**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
 
-**[demo.altawthiq.com](https://demo.altawthiq.com)**
+## How can I edit this code?
 
----
+There are several ways of editing your application.
 
-## نظرة عامة
+**Use Lovable**
 
-صفحة هبوط عربية متكاملة تتضمن:
-- نموذج تواصل شامل لجمع بيانات العملاء
-- تصميم عصري وجذاب مع دعم كامل للغة العربية (RTL)
-- عرض شركاء النجاح بشكل متحرك
-- تخزين البيانات في قاعدة بيانات Supabase
+Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
 
----
+Changes made via Lovable will be committed automatically to this repo.
 
-## التقنيات المستخدمة
+**Use your preferred IDE**
 
-| التقنية | الوصف |
-|---------|-------|
-| React 18 | مكتبة واجهات المستخدم |
-| TypeScript | لغة البرمجة |
-| Vite | أداة البناء |
-| Tailwind CSS | تنسيق الواجهة |
-| shadcn/ui | مكونات UI جاهزة |
-| Supabase | قاعدة البيانات |
-| Vercel | الاستضافة |
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
----
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-## التشغيل المحلي
+Follow these steps:
 
-```bash
-# استنساخ المشروع
-git clone https://github.com/Muhannadalaqeel/arabic-lead-connectt.git
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
 
-# الدخول للمجلد
-cd arabic-lead-connectt
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
 
-# تثبيت المكتبات
-npm install
+# Step 3: Install the necessary dependencies.
+npm i
 
-# إنشاء ملف .env
-# أضف المتغيرات التالية:
-# VITE_SUPABASE_URL=your_supabase_url
-# VITE_SUPABASE_PUBLISHABLE_KEY=your_supabase_key
-
-# تشغيل السيرفر
+# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
 ```
 
----
+**Edit a file directly in GitHub**
 
-## هيكل المشروع
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
-```
-src/
-├── components/          # المكونات
-│   ├── Header.tsx      # الشريط العلوي
-│   ├── HeroSection.tsx # القسم الترحيبي
-│   ├── ContactForm.tsx # نموذج التواصل
-│   ├── AboutSection.tsx# قسم لماذا نحن
-│   ├── PartnersMarquee.tsx # شركاء النجاح
-│   └── Footer.tsx      # التذييل
-├── pages/              # الصفحات
-├── integrations/       # تكامل Supabase
-└── assets/             # الصور والشعارات
-```
+**Use GitHub Codespaces**
 
----
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-## النشر
+## What technologies are used for this project?
 
-المشروع مربوط مع Vercel - أي تعديل يُرفع على GitHub ينتشر تلقائياً.
+This project is built with:
 
-```bash
-git add .
-git commit -m "وصف التعديل"
-git push
-```
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
 
----
+## How can I deploy this project?
 
-## التواصل
+Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
 
-- **الموقع**: [demo.altawthiq.com](https://demo.altawthiq.com)
-- **البريد**: info@altawthiq.com
-- **الهاتف**: +966 55 330 0598
+## Can I connect a custom domain to my Lovable project?
 
----
+Yes, you can!
 
-## الترخيص
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
-جميع الحقوق محفوظة © 2026 التوثيق الوطني للتدريب
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)

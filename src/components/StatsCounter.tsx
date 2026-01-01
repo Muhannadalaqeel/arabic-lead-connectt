@@ -82,7 +82,7 @@ const StatCard = ({ stat, index, isVisible }: { stat: typeof stats[0]; index: nu
 
         {/* Counter */}
         <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-2 tabular-nums">
-          <span className="text-gradient-primary">{count.toLocaleString('en-US')}</span>
+          <span className="text-primary">{count.toLocaleString('en-US')}</span>
           <span className="text-accent">{stat.suffix}</span>
         </div>
 
@@ -130,7 +130,7 @@ const StatsCounter = () => {
         {/* Section Header */}
         <div className="text-center mb-12 md:mb-16">
           <h2 className="font-display text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-4 opacity-0 animate-fade-in" style={{ animationDelay: '0.1s', animationFillMode: 'forwards' }}>
-            إنجازاتنا <span className="text-gradient-accent">بالأرقام</span>
+            إنجازاتنا <span className="text-accent">بالأرقام</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
             أرقام تعكس ثقة عملائنا وجودة خدماتنا على مدار السنوات
