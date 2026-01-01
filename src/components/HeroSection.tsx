@@ -32,21 +32,28 @@ const HeroSection = () => {
       </div>
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
-        <div className="max-w-3xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center">
           {/* Main Heading */}
-          <h1 className="font-display text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-tight mb-6 opacity-0 animate-fade-in" style={{ animationDelay: '0.1s' }}>
+          <h1 className="font-display text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-relaxed mb-6 opacity-0 animate-fade-in" style={{ animationDelay: '0.1s' }}>
             جاهز لتبدأ{' '}
-            <span className="relative inline-block pb-3">
+            <span className="relative inline-block pb-4">
               <span 
-                className={`text-gradient-primary inline-block transition-all duration-400 ease-in-out ${
+                className={`text-primary inline-block transition-all duration-400 ease-in-out pb-2 ${
                   isAnimating 
                     ? 'opacity-0 transform -translate-y-2' 
                     : 'opacity-100 transform translate-y-0'
                 }`}
+                style={{ 
+                  background: 'linear-gradient(135deg, hsl(270 60% 55%) 0%, hsl(270 70% 40%) 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                  paddingBottom: '0.15em'
+                }}
               >
                 {rotatingWords[currentWordIndex]}
               </span>
-              <span className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary/50 via-accent/50 to-primary/50 rounded-full" />
+              <span className="absolute -bottom-1 left-0 right-0 h-1 bg-gradient-to-r from-primary/50 via-accent/50 to-primary/50 rounded-full" />
             </span>
             {' '}مع فريقك؟
           </h1>
