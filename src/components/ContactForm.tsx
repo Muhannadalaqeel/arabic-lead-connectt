@@ -140,7 +140,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="py-8 md:py-12">
+    <section id="contact-form" className="py-8 md:py-12 scroll-mt-24">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-2xl mx-auto">
           <form
