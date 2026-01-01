@@ -21,17 +21,17 @@ const Footer = () => {
           {/* Contact Info */}
           <div className="flex flex-col items-center md:items-end gap-3">
             <a
-              href="mailto:info@company.com"
+              href="mailto:info@altawthiq.com"
               className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
             >
-              <span className="text-sm">info@company.com</span>
+              <span className="text-sm">info@altawthiq.com</span>
               <Mail className="w-4 h-4" />
             </a>
             <a
-              href="tel:+966500000000"
+              href="tel:+966553300598"
               className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
             >
-              <span className="text-sm" dir="ltr">+966 50 000 0000</span>
+              <span className="text-sm" dir="ltr">+966 55 330 0598</span>
               <Phone className="w-4 h-4" />
             </a>
           </div>
