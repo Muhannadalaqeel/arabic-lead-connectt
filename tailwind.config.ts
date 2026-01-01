@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Cairo', 'Tajawal', 'sans-serif'],
-        display: ['Tajawal', 'Cairo', 'sans-serif'],
+        sans: ['Readex Pro', 'IBM Plex Sans Arabic', 'sans-serif'],
+        display: ['IBM Plex Sans Arabic', 'Readex Pro', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
